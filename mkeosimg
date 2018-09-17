@@ -26,8 +26,8 @@ fi
 mkdir -p $BOOT_MNT
 mkdir -p $ROOT_MNT
 
-umount $BOOT_MNT
-umount $ROOT_MNT
+umount $BOOT_MNT || true
+umount $ROOT_MNT || true
 
 DIR=`mktemp -d`
 
